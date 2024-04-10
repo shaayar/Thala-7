@@ -14,95 +14,46 @@ body {
   position: relative;
 }
 
-nav {
-  display: flex;
-  padding: 1vw;
-  justify-content: space-around;
-  background-color: beige;
-}
-
-nav h1 {
-  color: orange;
-  font-size: 2.3vw;
-}
-
-nav h1 span {
-  color: blue;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0 1vw;
-  background-color: blue;
-  padding: 0.3vw 1vw;
-  font-size: 1.7vw;
-  gap: 2vw;
-}
-
-nav ul li a{
-  text-decoration: none;
-  color: #0c0c0c;
-  transition: all .5s ease-in-out;
-}
-nav ul li a:hover{
-  text-decoration: underline;
-  text-decoration-color: orange;
-  text-decoration-thickness: .3vw;
-}
-
-#side_menu {
-  display: flex;
-  align-items: center;
-  gap: 2vw;
-}
-
-nav img {
-  border-radius: 50%;
-  border: 0.1vw solid #0c0c0c;
-}
-
-#home{
+#home {
   display: flex;
   width: 100%;
 }
 
-.left{
+.left {
   width: 45%;
 }
 
-.left{
+.left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 4% 8%;
 }
 
-.left h2{
+.left h2 {
   text-transform: uppercase;
 }
 
-.left h2 span{
+.left h2 span {
   color: blue;
 }
 
-.left h1{
+.left h1 {
   font-size: 5vw;
   background-color: #dadada;
   margin-bottom: 1vw;
 }
 
-.left h1 span{
+.left h1 span {
   color: orange;
 }
 
-.left p{
+.left p {
   font-size: 1.6vw;
   margin-bottom: 1vw;
 }
 
-.left button{
+.left button {
   font-size: 1.5vw;
   border-radius: 25px;
   color: #fff;
@@ -112,40 +63,39 @@ nav img {
   width: 15vw;
 }
 
-.right{
+.right {
   display: flex;
   align-items: center;
   overflow: hidden;
 }
 
-.right img{
+.right img {
   height: 45vw;
   rotate: 30deg;
   margin-left: 8vw;
-  transition: rotate .5s ease-in-out;
+  transition: rotate 0.5s ease-in-out;
 }
 
 .right img:hover {
   rotate: 0deg;
 }
 
-#stat{
+#stat {
   background-color: orange;
 }
 
-#stat ul{
+#stat ul {
   padding: 1vw;
   list-style: none;
   display: flex;
   gap: 2vw;
 }
 
-#stat ul li h1{
+#stat ul li h1 {
   font-size: 1.5vw;
-  /* background-color: red; */
   width: 8vw;
 }
 
-#stat ul li h1 span{
+#stat ul li h1 span {
   font-size: 2vw;
 }

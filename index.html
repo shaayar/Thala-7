@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thala 7.</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/nav.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -13,9 +16,20 @@
       <h1 class="logo">Thala <span>7.</span></h1>
       <!-- menu -->
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#brands">Brands</a></li> <!--drop-down-->
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">Dropdown
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </li> <!--drop-down-->
         <li><a href="#more">More</a></li> <!--drop-down-->
         <li><a href="#contact_us">Contact Us</a></li>
       </ul>
@@ -35,8 +49,8 @@
         <h2>Se<span>v</span>en</h2>
         <h1>7!! Thala For A <span>Reason!</span></h1>
         <p>lorem ipsum dolor sit amet consctetur.
-        pretium quisque lorem feugiat justo at ut orci
-        nisi.</p>
+          pretium quisque lorem feugiat justo at ut orci
+          nisi.</p>
         <button aria-label="btn">Shop Now</button>
       </div>
       <div class="right">
@@ -65,4 +79,5 @@
     </div>
   </main>
 </body>
+
 </html>

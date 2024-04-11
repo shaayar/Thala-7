@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thala 7 Sneaker Store Cart</title>
+    <style>
+      #cart-main {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .cart-product-table {
+        border-spacing: 28px;
+      }
+      .cart-product-table tbody td {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-weight: lighter;
+      }
+      #cart-apply-card {
+        border: 1px solid silver;
+        border-radius: 10px;
+        padding: 10px;
+      }
+      #cart-apply-card > p {
+        font-weight: bold;
+      }
+      #cart-apply-coupon > input {
+        height: 29px;
+        width: 250px;
+        border-radius: 10px;
+        border: 0.5px solid silver;
+      }
+      #cart-apply-coupon > button {
+        color: white;
+        background-color: blue;
+        height: 38px;
+        width: 150px;
+        border: none;
+        border-radius: 10px;
+      }
+      #cart-apply-contents > div {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: -2%;
+        margin-bottom: -2%;
+      }
+      #cart-paynow {
+        margin-top: 2%;
+        width: 430px;
+        height: 50px;
+        background-color: rgb(255, 133, 34);
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: larger;
+      }
+      #cart-icons > img {
+        height: 38px;
+        width: 80px;
+      }
+      #cart-icons {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 2%;
+      }
+      #cart-right-container {
+        margin-left: -5%;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1 style="margin-left: 15%">Shopping Cart</h1>
+    <div id="cart-main">
+      <div id="cart-left-container">
+        <table
+          class="cart-product-table"
+          style="border-spacing: 50px; margin-bottom: -10%"
+        >
+          <thead>
+            <tr
+              style="
+                color: rgb(100, 98, 98);
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+                  sans-serif;
+              "
+            >
+              <td>Product</td>
+              <td>Quantity</td>
+              <td>Price</td>
+            </tr>
+          </thead>
+        </table>
+        <hr />
+        <table class="cart-product-table" style="margin-top: -3%">
+          <tbody>
+            <tr>
+              <td>Seven By M.S.Dhoni W...</td>
+              <td>- 1 +</td>
+              <td>4,999</td>
+              <td
+                style="
+                  color: red;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                    sans-serif;
+                "
+              >
+                x
+              </td>
+            </tr>
+            <tr>
+              <td>Seven By M.S.Dhoni W...</td>
+              <td>- 1 +</td>
+              <td>4,999</td>
+              <td
+                style="
+                  color: red;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                    sans-serif;
+                "
+              >
+                x
+              </td>
+            </tr>
+            <tr>
+              <td>Seven By M.S.Dhoni W...</td>
+              <td>- 1 +</td>
+              <td>4,999</td>
+              <td
+                style="
+                  color: red;
+                  font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana,
+                    sans-serif;
+                "
+              >
+                x
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="cart-right-container">
+        <div id="cart-apply-card">
+          <p>Enter Coupon Code</p>
+          <div id="cart-apply-coupon">
+            <input type="text" placeholder="  COUPON CODE" />
+            <button>Apply Coupon</button>
+          </div>
+          <div id="cart-apply-contents">
+            <div style="color: rgb(70, 67, 67)">
+              <p>Sub Total</p>
+              <p>4,700</p>
+            </div>
+            <div style="color: rgb(70, 67, 67)">
+              <p>Taxes(if applicable)</p>
+              <p>199</p>
+            </div>
+            <div style="color: rgb(70, 67, 67)">
+              <p>Discount</p>
+              <p>0</p>
+            </div>
+            <div style="font-weight: bold">
+              <p>Total</p>
+              <p>4,999</p>
+            </div>
+          </div>
+        </div>
+        <button id="cart-paynow">Pay Now 4,999</button>
+        <div id="cart-icons">
+          <img
+            src="https://dunmoremachales.com/wp-content/uploads/2022/03/shutterstock_1860566662-copy.jpg"
+            alt=""
+          />
+          <img
+            style="height: 28px; margin-top: 1%"
+            src="https://hostbillapp.com/appstore/payment_razorpay/images/logo.png"
+            alt=""
+          />
+          <img
+            src="https://thumbs.dreamstime.com/b/secure-payment-credit-card-icon-shield-transaction-vector-stock-illustration-261428997.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <h3 style="margin-top: 8%">< Continue Shopping</h3>
+  </body>
+</html>

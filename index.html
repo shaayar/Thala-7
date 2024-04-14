@@ -7,6 +7,8 @@
   <title>Thala 7.</title>
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/nav.css">
+  <!-- font-awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -20,7 +22,7 @@
         <li><a href="./about.html">About</a></li>
         <li>
           <div class="dropdown">
-            <button class="dropbtn">Dropdown
+            <button class="dropbtn">Brands
               <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
@@ -29,17 +31,37 @@
               <a href="#">Link 3</a>
             </div>
           </div>
-        </li> <!--drop-down-->
-        <li><a href="#more">More</a></li> <!--drop-down-->
+        </li>
+        <li>
+          <div class="dropdown">
+            <button class="dropbtn">More
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        </li>
         <li><a href="#contact_us">Contact Us</a></li>
       </ul>
+
       <div id="side_menu">
         <!-- search-bar -->
-        <input aria-label="search-bar" type="search">
+        <form action="#" id="search">
+          <input type="text" placeholder="Search.." name="search">
+          <button title="search" type="submit"><i class="fa fa-search"></i></button>
+        </form>
         <!-- cart -->
-        <div class="cart">cart</div>
+        <div class="cart">
+          <a href="Cart.html">
+            <img src="./images/shopping-bag.png" alt="Shopping Bag Icon" />
+            <h1 id="quantity">0</h1>
+          </a>
+        </div>
         <!-- profile picture -->
-        <img src="./img/user_pic.jpg" alt="pic" height="40vw">
+        <img src="./images/user_pic.jpg" alt="pic">
       </div>
     </nav>
   </header>
@@ -60,19 +82,19 @@
     <div id="stat">
       <ul>
         <li>
-          <img src="#" alt=".">
+          <img src="./images/favourite.png" alt="." class="img1">
           <h1><span>2k+</span> Reviews</h1>
         </li>
         <li>
-          <img src="#" alt=".">
+          <img src="./images/customer.png" alt="." class="img2">
           <h1><span>30k+</span> Happy Customers</h1>
         </li>
         <li>
-          <img src="#" alt=".">
+          <img src="./images/high-quality.png" alt="." class="img3">
           <h1><span>High</span> Quality</h1>
         </li>
         <li>
-          <img src="#" alt=".">
+          <img src="./images/rating.png" alt="." class="img4">
           <h1><span>4.5/5</span> Rating</h1>
         </li>
       </ul>

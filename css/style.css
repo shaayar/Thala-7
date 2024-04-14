@@ -88,14 +88,41 @@ body {
   padding: 1vw;
   list-style: none;
   display: flex;
-  gap: 2vw;
+  justify-content: space-around;
+  gap: 3vw;
+}
+
+#stat ul li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #stat ul li h1 {
-  font-size: 1.5vw;
+  font-size: 2vw;
   width: 8vw;
 }
 
 #stat ul li h1 span {
-  font-size: 2vw;
+  font-size: 3vw;
+}
+
+.img1{
+  height: 6vw;
+  margin-right: 2vw;
+}
+
+.img2{
+  height: 7vw;
+  margin-right: 2vw;
+}
+
+.img3{
+  height: 7vw;
+  margin-right: 2vw;
+}
+
+.img4{
+  height: 8vw;
+  margin-right: 2vw;
 }

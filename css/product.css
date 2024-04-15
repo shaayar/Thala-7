@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  overflow: hidden;
+}
+
+#route {
+  font-weight: normal;
+  margin-left: 5vw;
+  margin-bottom: 1vw;
+}
+
+#container {
+  margin-left: 2vw;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+#container .left,
+#container .right {
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vw;
+}
+
+.left img {
+  height: 25vw;
+}
+
+.right h1 {
+  width: 30vw;
+  margin-bottom: 1.2vw;
+}
+
+.right h4 {
+  width: 40vw;
+}
+
+#price {
+  color: rgb(37, 37, 245);
+  background-color: rgb(155, 221, 243);
+  border-radius: 10px;
+  padding: 0.5vw 1vw;
+  width: 10vw;
+}
+
+#price span{
+  font-size: 1.8vw;
+}
+
+#sales {
+  display: flex;
+  align-items: center;
+}
+
+#disc {
+  padding: 2vw;
+  font-size: 1.5vw;
+}
+
+#disc span {
+  color: rgba(60, 239, 60, 0.662);
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.dwn {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.dwn h3 {
+  font-size: 2vw;
+  background-color: #dadada;
+  border-radius: 16px;
+  padding: 1vw;
+  margin:/* up */ 0.5vw /* right */ 2vw /* down */ 1vw /* left */ 1vw;
+}
+
+.dwn button{
+  cursor: pointer;
+  border: none;
+  transition: all .3s ease-in-out;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: orange;
+  border-radius: 16px;
+  padding: 1vw;
+}
+.dwn button:hover{
+  scale: 2;
+  animation: spin .5s 1 linear;
+}
+
+@keyframes spin {
+  25%{
+    rotate: -10deg;
+  }
+  50%{
+    rotate: 10deg;
+  }
+  75%{
+    rotate: -10deg;
+  }
+}
+
+#prod__imgs {
+  padding: 2vw;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  overflow-x: scroll;
+  /* overflow-y: hidden; */
+  list-style-type: none;
+  margin-left: 5vw;
+}
+
+#prod__imgs img {
+  height: 7vw;
+  margin-right: 4vw;
+  transition: all 0.5s ease-in-out;
+  border-radius: 16px;
+  background-color: #dadaea;
+  padding: 0.3vw;
+}
+
+#prod__imgs img:hover {
+  border: 1px solid black;
+  height: 7.5vw;
+}
